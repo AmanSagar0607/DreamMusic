@@ -1,0 +1,164 @@
+.song-item {
+  position: relative;
+}
+
+.song-item::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 6px;
+
+  transition: background-color 0.3s ease; /* Smooth transition on hover/active */
+}
+
+/* Change the vertical line color on hover */
+.song-item:hover::before {
+  background-color: #ca0000; /* Change to hover color */
+}
+
+/* Keep the vertical line color when the item is clicked (current song) */
+.song-item.active::before {
+  background-color: #ca0000; /* Same as hover color or different */
+}
+
+/* CSS for screen sizes below 1200px */
+@media (max-width: 1280px) {
+  aside {
+    display: none; /* Hide the aside player */
+  }
+
+  .player-mobile {
+    display: flex; /* Show the mobile player */
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.9); /* Or another color */
+    padding: 10px; /* Adjust padding as necessary */
+    border-top: 1px solid #ccc; /* Optional border */
+  }
+
+  .player-mobile .bg-red-800 {
+    background-color: #1db954; /* Spotify-like color */
+    border-radius: 0; /* Remove corner rounding */
+  }
+
+  .player-mobile img {
+    width: 40px; /* Adjust image size for mobile */
+    height: 40px;
+  }
+
+  .player-mobile h4,
+  .player-mobile p {
+    font-size: 12px; /* Adjust font size */
+    text-align: center;
+  }
+
+  .player-mobile .control-buttons {
+    flex-direction: row; /* Adjust button layout */
+    justify-content: space-around; /* Space out the buttons */
+  }
+  /* Player at the bottom */
+  .player-container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #121212;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    z-index: 100;
+  }
+  */
+
+  /* Center the player controls */
+   .player-controls {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  */ .song-title {
+    text-align: center;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: white;
+  }
+
+  /* Hide the right sidebar */
+  .right-aside {
+    display: none;
+  }
+  */
+
+  /* Show all menu items in a horizontal bar */
+   .menu-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #222;
+    padding: 10px;
+  }
+
+  .menu-bar ul {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .menu-bar ul li {
+    list-style: none;
+    padding: 10px;
+    color: white;
+  }
+}
+
+.right-side {
+  right: 8px; /* Default positioning for large screens */
+}
+
+/* Media queries for responsive adjustments */
+@media (max-width: 1280px) {
+  .right-side {
+    width: 210px; /* Adjust size for screens smaller than 1280px */
+    height: 210px; /* Adjust size for screens smaller than 1280px */
+    margin-top: -20px; /* Adjust margin for smaller screens */
+    top: -20px; /* Adjust position for smaller screens */
+    right: 4px; /* Adjust positioning for smaller screens */
+  }
+}
+
+@media (max-width: 1024px) {
+  .right-side {
+    width: 240px; /* Further adjustment for medium screens */
+    height: 240px; /* Further adjustment for medium screens */
+    margin-top: -20px; /* Further adjust margin for medium screens */
+    top: -30px; /* Further adjust position for medium screens */
+    right: 16px; /* Further adjust positioning for medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .right-side {
+    width: 200px; /* Further adjustment for small screens */
+    height: 200px; /* Further adjustment for small screens */
+    margin-top: 0; /* Reset margin for small screens */
+    top: -20px; /* Reset position for small screens */
+    right: 16px; /* Adjust positioning for small screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .right-side {
+    width: 150px; /* Smallest size for very small screens */
+    height: 150px; /* Smallest size for very small screens */
+    margin-top: 0; /* Reset margin for very small screens */
+    top: 0; /* Reset position for very small screens */
+    right: 12px; /* Adjust positioning for very small screens */
+  }
+}
