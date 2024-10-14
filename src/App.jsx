@@ -21,7 +21,7 @@ const App = () => {
       album: "Thriller 25 Sup...",
       duration: "4:53",
       plays: "1,040,811,084",
-      image: "/src/assets/images/1.png",
+      image: "/images/1.png",
     },
     {
       id: "2",
@@ -30,7 +30,7 @@ const App = () => {
       album: "Thriller 25 Sup...",
       duration: "4:18",
       plays: "643,786,045",
-      image: "/src/assets/images/2.png",
+      image: "/images/2.png",
     },
     {
       id: "3",
@@ -39,7 +39,7 @@ const App = () => {
       album: "Thriller 25 Sup...",
       duration: "4:17",
       plays: "407,234,004",
-      image: "/src/assets/images/3.png",
+      image: "/images/3.png",
     },
     {
       id: "4",
@@ -48,7 +48,7 @@ const App = () => {
       album: "Bad 25th Anni...",
       duration: "6:05",
       plays: "316,391,952",
-      image: "/src/assets/images/4.png",
+      image: "/images/4.png",
     },
     {
       id: "5",
@@ -57,7 +57,7 @@ const App = () => {
       album: "Off The Wall",
       duration: "3:40",
       plays: "268,187,218",
-      image: "/src/assets/images/5.png",
+      image: "/images/5.png",
     },
   ]);
 
@@ -161,7 +161,7 @@ const App = () => {
         <h1 className="text-3xl font-bold mb-8 flex items-center pl-8">
           {/* Music Icon as an Image */}
           <img
-            src="/src/assets/images/Logo.png"
+            src="/images/Logo.png"
             alt="Music Icon"
             className="w-10 h-10 mr-2"
           />
@@ -178,7 +178,7 @@ const App = () => {
             <p className="text-left text-xs ">MENU</p>
             <li className="flex items-center space-x-2">
               <img
-                src="/src/assets/images/Home.png"
+                src="/images/Home.png"
                 alt="Home"
                 className="w-5 h-5 mr-2"
               />
@@ -186,7 +186,7 @@ const App = () => {
             </li>
             <li className="flex items-center space-x-2">
               <img
-                src="/src/assets/images/Trends.png"
+                src="/images/Trends.png"
                 alt="Trends"
                 className="w-5 h-5 mr-2"
               />
@@ -194,7 +194,7 @@ const App = () => {
             </li>
             <li className="flex items-center space-x-2">
               <img
-                src="/src/assets/images/Library.png"
+                src="/images/Library.png"
                 alt="Library"
                 className="w-5 h-5 mr-2"
               />
@@ -202,7 +202,7 @@ const App = () => {
             </li>
             <li className="flex items-center space-x-2">
               <img
-                src="/src/assets/images/Discover.png"
+                src="/images/Discover.png"
                 alt="Discover"
                 className="w-5 h-5 mr-2"
               />
@@ -215,7 +215,7 @@ const App = () => {
             <p className="text-left text-xs">GENERAL</p>
             <li className="flex items-center space-x-2">
               <img
-                src="/src/assets/images/Settings.png"
+                src="/images/Settings.png"
                 alt="Settings"
                 className="w-5 h-5 mr-2"
               />
@@ -223,7 +223,7 @@ const App = () => {
             </li>
             <li className="flex items-center space-x-2">
               <img
-                src="/src/assets/images/Log Out.png"
+                src="/images/Log Out.png"
                 alt="Logout"
                 className="w-5 h-5 mr-2"
               />
@@ -263,7 +263,7 @@ const App = () => {
           <div
             className="bg-cover mt-24 bg-center rounded-3xl p-8 sm:p-6 md:p-8 lg:p-10 xl:p-16 flex items-center justify-between relative mx-4 sm:mx-6 md:mx-8 lg:mx-10 xl:mx-14"
             style={{
-              backgroundImage: "url(/src/assets/images/Background.png)",
+              backgroundImage: "url(images/Background.png)",
             }}
           >
             {/* Left Side: Text */}
@@ -273,7 +273,7 @@ const App = () => {
                 {/* Verified PNG with background */}
                 <div className="w-6 h-6 sm:w-8 sm:h-8 rounded-full flex items-center justify-center overflow-hidden">
                   <img
-                    src="/src/assets/images/verified.png"
+                    src="/images/Verified.png"
                     alt="Verified"
                     className="h-full w-full object-cover"
                   />
@@ -304,7 +304,7 @@ const App = () => {
               xl:w-[340px] xl:h-[340px] xl:mt-[-40px] xl:top-[-48px]"
             >
               <img
-                src="/src/assets/images/Michael.png"
+                src="/images/Michael.png"
                 alt="Michael Jackson"
                 className="w-full h-full "
               />
@@ -373,7 +373,7 @@ const App = () => {
         <div className="bg-bg5 rounded-lg p-6 bottom-0 right-0 w-72 flex flex-col justify-end">
           {/* Image */}
           <img
-            src="/src/assets/images/playerPic.png"
+            src="/images/playerPic.png"
             alt="Now Playing"
             className="w-full h-48 object-cover rounded mb-4"
           />
